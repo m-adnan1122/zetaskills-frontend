@@ -149,3 +149,136 @@
 @media(max-width:700px){.courses-header{padding-top:34px;padding-bottom:28px}.courses-header h1{font-size:37px;letter-spacing:-.8px}.courses-header p{font-size:15px}.courses-title-break{display:none}.course-filter-bar{top:68px}.course-filter-scroll{width:100%;padding:12px 18px}.courses-results{padding-top:32px;padding-bottom:72px}.courses-results .course-grid{grid-template-columns:1fr;gap:18px}.course-list-card{padding:14px}}
 @media(max-width:700px){.courses-header h1{max-width:100%;font-size:32px;letter-spacing:-.5px;overflow-wrap:anywhere}.courses-results .course-grid{grid-template-columns:minmax(0,1fr)}}
 .course-filter-static-active{background:var(--primary)}
+
+/* Enrollment flow */
+.enroll-main{padding-top:104px;padding-bottom:128px;min-height:calc(100vh - 80px)}
+.enroll-heading{text-align:center;margin:0 auto 38px}
+.enroll-heading h1{font-size:clamp(40px,5vw,54px);letter-spacing:-1.3px;margin:0 0 9px;color:var(--text)}
+.enroll-heading p{font-size:16px;color:var(--muted);margin:0}
+.enroll-progress{position:relative;isolation:isolate;width:min(690px,100%);margin:0 auto 36px;display:flex;align-items:center}
+.enroll-progress-track{position:absolute;z-index:-1;left:16.66%;right:16.66%;top:20px;height:2px;background:var(--border)}
+.enroll-progress-fill{display:block;height:100%;background:var(--primary);transition:width .32s ease-out}
+.enroll-progress-step{width:33.333%;display:flex;align-items:center;justify-content:center;gap:12px;min-width:0;color:var(--muted)}
+.enroll-step-number{width:40px;height:40px;flex:none;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;background:var(--raised);color:var(--text);font-weight:700;box-shadow:0 2px 4px #10231c0a}
+.enroll-progress-step.current .enroll-step-number,.enroll-progress-step.complete .enroll-step-number{background:var(--primary);border-color:var(--primary);color:#fff}
+.enroll-step-label{display:grid;line-height:1.45;gap:4px;min-width:60px}
+.enroll-step-label small{font-size:12px;font-weight:600;color:var(--text)}
+.enroll-step-label strong{font-size:14px;color:var(--text);font-weight:500}
+.enroll-progress-step.current .enroll-step-label small{color:var(--primary)}
+.enroll-card-motion{width:min(760px,100%);margin-inline:auto;scroll-margin-top:100px}
+.enroll-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px;box-shadow:0 5px 18px #10231c08}
+.enroll-form{min-width:0}
+.enroll-card-heading{margin:0 0 21px}
+.enroll-card-heading h2{font-size:22px;margin:0 0 4px;color:var(--text)}
+.enroll-card-heading p{font-size:14px;color:var(--muted);margin:0}
+.enroll-fields-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 20px}
+.enroll-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.enroll-field-full{grid-column:1/-1}
+.enroll-field>label,.enroll-field-label-row>label:first-child,.enroll-radio-fieldset legend{font-size:13px;font-weight:600;text-transform:uppercase;color:var(--text);line-height:1.35}
+.enroll-required{color:var(--text)}
+.enroll-field input:not([type=checkbox]),.enroll-field select{display:block;width:100%;height:50px;min-width:0;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:0 14px;font-size:14px;line-height:1.4}
+.enroll-field input::placeholder{color:var(--muted);opacity:.9}
+.enroll-field input:disabled{opacity:1;color:var(--muted);cursor:not-allowed}
+.enroll-field input[aria-invalid=true],.enroll-field select[aria-invalid=true],.enroll-radio-card input[aria-invalid=true]{border-color:#DC2626}
+.enroll-field select{appearance:auto}
+.enroll-field-hint,.enroll-field-error{display:block;font-size:12px;line-height:1.4;margin:0}
+.enroll-field-hint{color:var(--muted)}
+.enroll-field-error{color:#B91C1C}
+.dark .enroll-field-error{color:#FCA5A5}
+.enroll-field-label-row{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:18px}
+.enroll-inline-check{display:inline-flex;align-items:center;gap:5px;font-size:10px!important;font-weight:600!important;color:var(--muted)!important;white-space:nowrap}
+.enroll-inline-check input,.enroll-confirm-control input{width:16px;height:16px;accent-color:var(--primary);flex:none}
+.enroll-actions{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--border);margin-top:10px;padding-top:23px}
+.enroll-actions-single{justify-content:flex-end}
+.enroll-actions .button{min-height:44px}
+.enroll-next,.enroll-submit{min-width:100px}
+.enroll-submit{min-width:190px}
+.enroll-submit:disabled{opacity:.58;cursor:not-allowed}
+.enroll-spinner{animation:enroll-spin .8s linear infinite}
+@keyframes enroll-spin{to{transform:rotate(360deg)}}
+.enroll-course-fields{display:grid;gap:23px}
+.enroll-prefilled-note{color:var(--muted);font-size:12px;margin:-18px 0 -9px}
+.enroll-radio-fieldset{border:0;margin:0;padding:0;min-width:0}
+.enroll-radio-fieldset legend{padding:0;margin:0 0 9px}
+.enroll-radio-grid{display:grid;gap:12px}
+.enroll-radio-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.enroll-radio-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.enroll-radio-card{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;min-width:0;min-height:50px;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font-size:14px;cursor:pointer;transition:border-color .16s,background-color .16s}
+.enroll-radio-card:hover,.enroll-radio-card.selected{border-color:var(--primary)}
+.enroll-radio-card:focus-within{outline:3px solid var(--accent);outline-offset:3px}
+.enroll-radio-card.selected{background:color-mix(in srgb,var(--primary) 4%,var(--card))}
+.enroll-radio-card input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+.enroll-radio-icon{display:inline-flex;color:var(--primary)}
+.enroll-radio-dot{width:16px;height:16px;flex:none;border:1px solid #BFC7C4;border-radius:50%;margin-left:auto;display:grid;place-items:center}
+.enroll-radio-card.selected .enroll-radio-dot{border:1px solid var(--primary)}
+.enroll-radio-card.selected .enroll-radio-dot:after{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary)}
+.enroll-confirm-step>.enroll-card-heading{margin-bottom:24px}
+.enroll-review-group{margin-bottom:27px}
+.enroll-review-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.enroll-review-heading h3{display:flex;align-items:center;gap:9px;font-family:var(--font-inter),Arial,sans-serif;font-size:15px;font-weight:700;margin:0}
+.enroll-review-heading h3>span{width:9px;height:9px;border-radius:50%;background:var(--primary)}
+.enroll-review-heading a{font-size:13px;font-weight:600;color:var(--primary);text-decoration:underline;text-underline-offset:3px}
+.enroll-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 22px;background:var(--raised);border-radius:9px;padding:18px 20px;margin:0}
+.enroll-review-row{min-width:0}
+.enroll-review-row dt{font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.enroll-review-row dd{font-size:14px;font-weight:600;color:var(--text);margin:0;overflow-wrap:anywhere}
+.enroll-confirm-control{border:1px solid var(--border);border-radius:8px;padding:13px 14px;margin-top:5px}
+.enroll-confirm-control>label{display:flex;align-items:center;gap:11px;font-size:14px;color:var(--text);cursor:pointer}
+.enroll-confirm-control .enroll-field-error{margin:8px 0 0 27px}
+.enroll-form-error{padding:11px 13px;border-radius:8px;background:#FEF2F2;color:#991B1B;font-size:13px;margin:0 0 18px}
+.enroll-form-error a{font-weight:700;text-decoration:underline}
+.dark .enroll-form-error{background:#3F1D24;color:#FECACA}
+.enroll-honeypot{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.enroll-success-wrap{width:min(760px,100%);margin:0 auto}
+.enroll-success-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:42px 48px;text-align:center;box-shadow:0 5px 18px #10231c08}
+.enroll-success-icon{color:#16A34A;margin-bottom:14px}
+.dark .enroll-success-icon{color:#4ADE80}
+.enroll-success-card h2{font-size:30px;margin:0 0 8px;color:var(--text)}
+.enroll-success-copy{color:var(--muted);margin:0 0 25px}
+.enroll-success-summary{display:grid;gap:3px;padding:17px;background:var(--raised);border-radius:10px;margin:0 auto 25px;max-width:440px}
+.enroll-success-summary span:first-child{color:var(--muted);font-size:12px}
+.enroll-success-summary strong{color:var(--text);font-size:16px}
+.enroll-success-summary span:last-child{color:var(--primary);font-size:13px;font-weight:600}
+.enroll-next-steps{text-align:left;max-width:440px;margin:0 auto 26px}
+.enroll-next-steps h3{font-size:17px;margin:0 0 10px}
+.enroll-next-steps ol{padding:0;list-style:none;counter-reset:enroll-step;display:grid;gap:9px;margin:0}
+.enroll-next-steps li{counter-increment:enroll-step;display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
+.enroll-next-steps li:before{content:counter(enroll-step);display:grid;place-items:center;width:24px;height:24px;flex:none;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-size:12px;font-weight:700}
+.enroll-success-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.enroll-whatsapp-link{display:inline-block;margin-top:18px;color:#15803D;font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.dark .enroll-whatsapp-link{color:#4ADE80}
+@media(max-width:700px){
+  .enroll-main{padding-top:48px;padding-bottom:72px;min-height:calc(100vh - 68px)}
+  .enroll-heading{margin-bottom:27px}
+  .enroll-heading h1{font-size:40px}
+  .enroll-heading p{font-size:14px;max-width:310px;margin-inline:auto}
+  .enroll-progress{margin-bottom:25px}
+  .enroll-progress-step{gap:7px}
+  .enroll-step-number{width:36px;height:36px}
+  .enroll-progress-track{top:18px}
+  .enroll-progress-step{justify-content:flex-start}
+  .enroll-progress-step:nth-of-type(2){justify-content:flex-start}
+  .enroll-progress-step:nth-of-type(3){justify-content:center}
+  .enroll-progress-step:last-child{justify-content:flex-end}
+  .enroll-step-label{min-width:0}
+  .enroll-step-label small{font-size:10px}
+  .enroll-step-label strong{font-size:12px}
+  .enroll-card{padding:22px 18px;border-radius:13px}
+  .enroll-card-heading{margin-bottom:18px}
+  .enroll-fields-grid{grid-template-columns:1fr;gap:13px}
+  .enroll-field-full{grid-column:auto}
+  .enroll-course-fields{gap:20px}
+  .enroll-radio-grid-3{grid-template-columns:1fr}
+  .enroll-radio-grid-3 .enroll-radio-card{justify-content:flex-start}
+  .enroll-radio-grid-3 .enroll-radio-dot{margin-left:auto}
+  .enroll-actions{padding-top:18px;margin-top:18px}
+  .enroll-actions .button{min-height:46px}
+  .enroll-actions-single .button{width:100%}
+  .enroll-actions:not(.enroll-actions-single) .button{flex:1}
+  .enroll-submit{min-width:0}
+  .enroll-review-grid{grid-template-columns:1fr;gap:12px;padding:15px}
+  .enroll-success-card{padding:32px 20px;border-radius:13px}
+  .enroll-success-card h2{font-size:26px}
+  .enroll-success-actions{display:grid;grid-template-columns:1fr}
+  .enroll-success-actions .button{width:100%}
+}

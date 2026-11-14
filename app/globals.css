@@ -55,3 +55,59 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 .category-section .section-heading{margin-bottom:0}.category-section .category-grid{margin-top:40px}
+.nav-link{height:100%;display:flex;align-items:center;border-bottom:2px solid transparent;transition:color .16s,border-color .16s}
+.nav-link.active{color:var(--primary);border-bottom-color:var(--primary);font-weight:600}
+.nav-links.nav-open .nav-link{min-height:44px;height:auto}
+.about-header{padding-top:38px;padding-bottom:32px;text-align:center}
+.about-header h1{font-size:clamp(38px,5vw,58px);letter-spacing:-1.5px;margin-bottom:8px}
+.about-header h1 span{color:var(--primary)}
+.about-header p{max-width:1060px;margin:0 auto;color:var(--muted);font-size:18px;line-height:1.55}
+.about-photo-wrap{margin-bottom:0}
+.about-photo{width:100%;aspect-ratio:16/6;border-radius:12px}
+.about-learning{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:6%;padding-bottom:90px}
+.about-learning h2{font-size:clamp(30px,3.5vw,40px);margin-bottom:20px}
+.about-learning p{font-size:17px;color:var(--muted);line-height:1.65}
+.about-classroom-photo{width:100%;aspect-ratio:1.15;border-radius:24px}
+.difference-section{margin-top:0;background:var(--primary);color:#fff;padding:62px 0 72px;overflow:hidden}
+.difference-section .center-heading{margin-bottom:0}
+.difference-section .center-heading h2{font-size:clamp(28px,3.5vw,38px)}
+.difference-section .center-heading p{color:#eaf1ff;margin:0}
+.difference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:38px;align-items:stretch}
+.difference-item{display:flex;height:100%}
+.difference-card{width:100%;min-height:220px;height:100%;background:#fff;color:#10231C;border:1px solid var(--border);border-top:4px solid var(--primary);border-radius:12px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.difference-card h3{font-size:21px;margin:0 0 14px;color:#10231C}
+.difference-card p{font-size:15px;line-height:1.6;margin:0;color:#33443D}
+#internship{scroll-margin-top:96px}
+@media(max-width:900px){.about-learning{gap:32px}.difference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.difference-item:last-child{grid-column:1/-1}.difference-item:last-child .difference-card{min-height:180px}}
+@media(max-width:700px){.about-header{padding-top:32px;padding-bottom:25px}.about-header h1{font-size:37px}.about-header p{font-size:16px}.about-photo{aspect-ratio:16/9}.about-learning{grid-template-columns:1fr;padding-bottom:62px;gap:24px}.about-learning h2{font-size:30px;margin-bottom:15px}.about-learning p{font-size:15px}.about-classroom-photo{aspect-ratio:16/10;border-radius:16px}.difference-section{padding:48px 0 52px}.difference-grid{grid-template-columns:1fr;gap:16px;margin-top:28px}.difference-item:last-child{grid-column:auto}.difference-card{min-height:185px;padding:24px 20px}.difference-item:last-child .difference-card{min-height:185px}}
+.difference-section{padding:62px 0 120px;overflow:visible}
+.difference-section .center-heading{margin:0 auto;text-align:center}
+.difference-section .center-heading h2{font-size:clamp(36px,3.2vw,40px);font-weight:700;color:#fff;margin-bottom:8px}
+.difference-section .center-heading p{font-size:18px;color:#fff;margin:0}
+.difference-overlap{position:relative;z-index:1;width:min(1100px,calc(100% - 48px));margin:-96px auto 96px}
+.difference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch;margin:0}
+.difference-item{position:relative;z-index:1;display:flex;min-width:0;height:100%}
+.difference-card{width:100%;min-height:240px;height:100%;padding:32px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-top:4px solid var(--accent);border-radius:16px;box-shadow:0 8px 20px rgba(16,35,28,.07);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.dark .difference-card{background:var(--card);color:var(--text)}
+.difference-card h3{font-size:23px;font-weight:600;line-height:1.3;color:var(--text);margin:0 0 14px}
+.difference-card p{font-family:var(--font-inter),Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;color:var(--muted);margin:0}
+.difference-overlap + .testimonial-section{padding-top:0}
+@media(max-width:900px){.difference-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.difference-item:last-child{grid-column:1/-1}}
+@media(max-width:767px){.difference-section{padding:48px 0 64px}.difference-section .center-heading h2{font-size:30px}.difference-section .center-heading p{font-size:16px}.difference-overlap{width:calc(100% - 36px);margin:-40px auto 96px}.difference-grid{grid-template-columns:1fr;gap:16px}.difference-item:last-child{grid-column:auto}.difference-card,.difference-item:last-child .difference-card{min-height:210px;padding:32px 24px}}
+/* Figma alignment for the About differentiator cards */
+.difference-section{padding-bottom:170px}
+.difference-overlap{width:min(1152px,calc(100% - 48px));margin:-108px auto 96px}
+.difference-grid{gap:28px}
+.difference-card{min-height:240px;padding:32px;border-top-width:8px;border-radius:24px}
+.difference-card h3{font-size:24px}
+.difference-card p{font-size:19px;color:color-mix(in srgb,var(--text) 78%,var(--muted))}
+@media(max-width:900px){.difference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.difference-section{padding-bottom:64px}.difference-overlap{width:calc(100% - 36px);margin-top:-40px}.difference-grid{grid-template-columns:1fr;gap:16px}.difference-card{min-height:210px;padding:32px 24px;border-top-width:6px;border-radius:20px}.difference-card h3{font-size:23px}.difference-card p{font-size:18px}}
+/* Open-bottom differentiator cards */
+.difference-grid{align-items:start}
+.difference-item{display:block;height:auto}
+.difference-card{width:100%;min-height:0;height:auto;padding:28px 28px 0;background:var(--bg);color:var(--text);border:0;border-top:6px solid #06B6D4;border-radius:28px 28px 0 0;box-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center}
+.dark .difference-card{background:var(--bg);color:var(--text)}
+.difference-card h3{font-size:24px;font-weight:600;line-height:1.3;color:var(--text);margin:0 0 14px}
+.difference-card p{font-family:var(--font-inter),Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.5;color:color-mix(in srgb,var(--text) 78%,var(--muted));margin:0}
+@media(max-width:767px){.difference-section{padding-bottom:100px}.difference-overlap{margin-top:-40px}.difference-grid{grid-template-columns:1fr;gap:24px}.difference-card{min-height:0;height:auto;padding:28px 28px 0;border-top-width:6px;border-radius:28px 28px 0 0}.difference-card h3{font-size:23px}.difference-card p{font-size:18px}}

@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        background: "var(--bg)", card: "var(--card)", raised: "var(--raised)",
+        border: "var(--border)", foreground: "var(--text)", muted: "var(--muted)",
+        primary: "var(--primary)", accent: "var(--accent)", whatsapp: "var(--whatsapp)",
+      },
+      borderRadius: { card: "12px", button: "8px" },
+      fontFamily: { sans: ["var(--font-inter)"], heading: ["var(--font-poppins)"] },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

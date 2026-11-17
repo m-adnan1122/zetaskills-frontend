@@ -1,5 +1,6 @@
 "use client";
 import { WHATSAPP_NUMBER } from "@/lib/contact";
+import { ZetaLoader } from "@/components/ZetaLoader";
 
 import { useEffect, useRef, useState, type FormEvent, type InputHTMLAttributes, type ReactNode } from "react";
 import Link from "next/link";
@@ -80,10 +81,11 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
   const [direction, setDirection] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [formError, setFormError] = useState(false);
+  const [formError, setFormError] = useState("");
   const [motionReady, setMotionReady] = useState(false);
   const reducedMotion = useReducedMotion();
   const successHeading = useRef<HTMLHeadingElement>(null);
+  const submissionId = useRef<string | null>(null);
   const whatsappNumber = WHATSAPP_NUMBER;
   const whatsappHref = `https://wa.me/${whatsappNumber}`;
 
@@ -95,6 +97,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
   }, [isSuccess, reducedMotion]);
 
   const updateValue = <K extends EnrollmentField>(field: K, value: EnrollmentValues[K]) => {
+    submissionId.current = null;
     setValues((current) => ({ ...current, [field]: value, ...(field === "confirmed" ? {} : { confirmed: false }) }));
     setErrors((current) => {
       const next = { ...current };
@@ -104,14 +107,14 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
       if (field === "sameAsPhone" && value === true) delete next.whatsappNumber;
       return next;
     });
-    setFormError(false);
+    setFormError("");
   };
 
   const goToStep = (nextStep: 1 | 2 | 3, preserveErrors = false) => {
     setDirection(nextStep > step ? 1 : -1);
     setStep(nextStep);
     if (!preserveErrors) setErrors({});
-    setFormError(false);
+    setFormError("");
   };
 
   const focusFirstError = (nextErrors: EnrollmentErrors, order: EnrollmentField[], delay = 0) => {
@@ -131,7 +134,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (isSubmitting) return;
-    setFormError(false);
+    setFormError("");
 
     if (step === 1) {
       const nextErrors = validatePersonalStep(values);
@@ -175,11 +178,13 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
 
     setIsSubmitting(true);
     try {
+      if (!submissionId.current) submissionId.current = crypto.randomUUID();
       const response = await fetch("/api/enroll", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...values,
+          submissionId: submissionId.current,
           fullName: values.fullName.trim(),
           fatherName: values.fatherName.trim(),
           phoneNumber: normalizedPhone,
@@ -190,7 +195,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
         }),
       });
       const result: unknown = await response.json();
-      if (response.ok && isRecord(result) && result.ok === true) {
+      if (response.ok && isRecord(result) && result.ok === true && result.reference === submissionId.current) {
         setIsSuccess(true);
         return;
       }
@@ -209,13 +214,18 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
           } else if (courseOrder.some((field) => serverErrors[field])) {
             goToStep(2, true);
             focusFirstError(serverErrors, courseOrder, 350);
-          } else focusFirstError(serverErrors, ["confirmed"]);
+          } else if (serverErrors.confirmed) focusFirstError(serverErrors, ["confirmed"]);
+          else setFormError("Please check your enrollment details and try again.");
+          return;
+        }
+        if (typeof result.errors.form === "string") {
+          setFormError(result.errors.form);
           return;
         }
       }
-      setFormError(true);
+      setFormError("Something went wrong. Please try again or message us on WhatsApp.");
     } catch {
-      setFormError(true);
+      setFormError("Something went wrong. Please try again or message us on WhatsApp.");
     } finally {
       setIsSubmitting(false);
     }
@@ -227,6 +237,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
   if (isSuccess) {
     const success = <SuccessView course={selectedCourse} batchTime={values.batchTime} headingRef={successHeading} whatsappHref={whatsappHref} />;
     return <main className="enroll-main container">
+      <ZetaLoader active={isSubmitting} />
       <header className="enroll-heading"><h1>Enroll Now</h1><p>Fill in your details and our team will contact you within 24 hours.</p></header>
       {canAnimate ? <motion.div className="enroll-success-wrap" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: "easeOut" }}>{success}</motion.div> : <div className="enroll-success-wrap">{success}</div>}
     </main>;
@@ -234,8 +245,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
 
   const form = <form id="enroll-form" className="enroll-form" noValidate onSubmit={submit}>
     <input type="hidden" name="referredBy" value={values.referredBy} readOnly />
-    <div className="enroll-honeypot" aria-hidden="true"><input type="text" name="website" value={values.website} onChange={(event) => updateValue("website", event.target.value)} tabIndex={-1} autoComplete="off" aria-hidden="true" /></div>
-    {formError && <p className="enroll-form-error" role="alert">Something went wrong. Please try again or message us on <a href={whatsappHref} target="_blank" rel="noreferrer">WhatsApp</a>.</p>}
+    {formError && <p className="enroll-form-error" role="alert">{formError} <a href={whatsappHref} target="_blank" rel="noreferrer">Contact us on WhatsApp</a></p>}
     {canAnimate ? <AnimatePresence mode="wait" initial={false} custom={direction}>
       <motion.div key={step} custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3, ease: "easeOut" }}>
         {step === 1 ? <PersonalStep values={values} errors={errors} updateValue={updateValue} /> : step === 2 ? <CourseStep values={values} errors={errors} updateValue={updateValue} courses={courses} courseWasPrefilled={courseWasPrefilled} /> : <ConfirmStep values={values} errors={errors} course={selectedCourse} onEdit={goToStep} updateValue={updateValue} />}
@@ -251,6 +261,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
 
   const card = <div className="enroll-card">{form}</div>;
   return <main className="enroll-main container">
+    <ZetaLoader active={isSubmitting} />
     <header className="enroll-heading"><h1>Enroll Now</h1><p>Fill in your details and our team will contact you within 24 hours.</p></header>
     <ProgressSteps step={step} />
     {canAnimate ? <motion.div className="enroll-card-motion" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: "easeOut" }}>{card}</motion.div> : <div className="enroll-card-motion">{card}</div>}
@@ -387,7 +398,7 @@ function RadioCards({ name, legend, value, options, error, columns = 2, onChange
 type CourseStepProps = PersonalStepProps & { courses: Course[]; courseWasPrefilled: boolean };
 
 function CourseStep({ values, errors, updateValue, courses, courseWasPrefilled }: CourseStepProps) {
-  const options = courses.map((course) => ({ value: course.slug, label: `${course.title} (${course.duration}, PKR ${course.fee.toLocaleString("en-US")})` }));
+  const options = courses.map((course) => ({ value: course.slug, label: `${course.title} (${course.duration})` }));
   return <section className="enroll-step-content" aria-labelledby="course-step-title">
     <div className="enroll-card-heading"><h2 id="course-step-title">Course Details</h2><p>Select a course and share your preferences.</p></div>
     <div className="enroll-course-fields">
@@ -455,7 +466,7 @@ function SuccessView({ course, batchTime, headingRef, whatsappHref }: { course?:
     <h2 id="enroll-success-heading" ref={headingRef} tabIndex={-1}>Enrollment received!</h2>
     <p className="enroll-success-copy">We will contact you within 24 hours on WhatsApp.</p>
     <div className="enroll-success-summary"><span>Selected course</span><strong>{course?.title ?? "Course"}</strong><span>{batchTime} batch</span></div>
-    <div className="enroll-next-steps"><h3>What happens next</h3><ol><li>We message you on WhatsApp</li><li>We confirm your batch and fee details</li><li>You start your course</li></ol></div>
+    <div className="enroll-next-steps"><h3>What happens next</h3><ol><li>We message you on WhatsApp</li><li>We confirm your batch details</li><li>You start your course</li></ol></div>
     <div className="enroll-success-actions"><Link href="/" className="button button-primary">Back to Home</Link><Link href="/courses" className="button button-outline">Browse More Courses</Link></div>
     <a className="enroll-whatsapp-link" href={whatsappHref} target="_blank" rel="noreferrer">Message us on WhatsApp</a>
   </section>;

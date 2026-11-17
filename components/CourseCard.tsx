@@ -23,7 +23,7 @@ export function CourseCard({ course }: { course: Course }) {
     <h3 className="course-card-title"><Link className="course-card-link" href={`/courses/${course.slug}`}>{course.title}</Link></h3>
     <p className="course-description">{course.description}</p>
     <div className="tool-tags">{course.tools.slice(0, 4).map((tool) => <span key={tool}>{tool}</span>)}</div>
-    <div className="course-meta"><strong>PKR {course.fee.toLocaleString("en-PK")}</strong><span>{course.duration}</span></div>
+    <div className="course-meta"><span>{course.duration}</span></div>
     <div className="course-card-actions"><Link className="button button-outline" href={`/courses/${course.slug}`}>Details</Link><Link className="button button-primary" href={`/enroll?course=${course.slug}`}>Enroll Now</Link></div>
   </article>;
 }

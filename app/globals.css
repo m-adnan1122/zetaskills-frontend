@@ -292,14 +292,38 @@
 
 /* Theme-specific brand assets and course contact action */
 .logo img{display:block;width:190px;height:auto;max-width:100%}
+.logo .logo-light{display:block;width:190px;max-width:100%;aspect-ratio:3200/526;background:#2563EB;-webkit-mask:url('/Zeta_Skills_White_Logo.png') center / contain no-repeat;mask:url('/Zeta_Skills_White_Logo.png') center / contain no-repeat}
 .logo .logo-dark,.dark .logo .logo-light{display:none}
 .dark .logo .logo-dark{display:block}
 .site-footer .logo .logo-light{display:none}
 .site-footer .logo .logo-dark{display:block}
 .dark .detail-whatsapp{background:#123527;border-color:#247b4a;color:#86efac}
 .dark .detail-whatsapp:hover{background:#195337;border-color:#4ade80;color:#dcfce7}
-@media(max-width:700px){.logo img{width:160px}}
+@media(max-width:700px){.logo img,.logo .logo-light{width:160px}}
 
 @media(max-width:760px){.contact-page-heading{padding-top:40px;padding-bottom:28px}}
 
 .contact-page{padding:80px 0 90px}.contact-page-layout{display:grid;grid-template-columns:1fr minmax(360px,520px);gap:9%;align-items:start}.contact-page-info{padding-top:20px}.contact-page-eyebrow{color:var(--primary);font-size:12px;font-weight:700;letter-spacing:.12em}.contact-page-info h1{font-size:clamp(38px,5vw,62px);letter-spacing:-1.8px;margin:18px 0}.contact-page-info h1 span{color:var(--primary)}.contact-page-info>p{color:var(--muted);font-size:17px;max-width:540px}.contact-methods{display:grid;gap:12px;margin-top:38px}.contact-method{display:flex;align-items:center;gap:16px;padding:17px;border:1px solid var(--border);border-radius:12px;background:var(--card);transition:border-color .16s}.contact-method:hover{border-color:var(--primary)}.contact-method-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:9px;background:var(--primary-soft);color:var(--primary);flex:none}.contact-method strong,.contact-method small{display:block}.contact-method small{color:var(--muted);font-size:14px;overflow-wrap:anywhere}.contact-method-arrow{margin-left:auto;flex:none;color:var(--muted)}.contact-page-form .contact-form{border:1px solid var(--border);box-shadow:0 12px 38px #10231c0d}.contact-form .phone-input:focus-within{outline:3px solid var(--accent);outline-offset:3px}.contact-form .form-status:empty{display:none}@media(max-width:800px){.contact-page{padding:48px 0 60px}.contact-page-layout{grid-template-columns:1fr;gap:32px}.contact-page-info{padding-top:0}.contact-page-info h1{font-size:40px}.contact-methods{margin-top:28px}}
+
+/* Registration announcement */
+.announcement-bar{overflow:hidden;background:#235fde;color:#fff;font-size:14px;line-height:1.4}.announcement-track{display:flex;width:max-content;animation:announcement-scroll 19s linear infinite}.announcement-copy{flex:none;min-width:100vw;padding:11px 30px}.announcement-message{display:flex;align-items:center;justify-content:center;gap:14px;white-space:nowrap}.announcement-message strong{color:#fff}.announcement-message b{color:#a9d5ff}.announcement-separator{height:18px;width:1px;background:#ffffff70}.announcement-bar:hover .announcement-track{animation-play-state:paused}@keyframes announcement-scroll{to{transform:translateX(-50%)}}
+/* Category cards */
+.category-card{display:flex;flex-direction:column;min-height:240px;height:100%;padding:26px;border:1px solid var(--border);border-radius:16px;background:var(--card);color:var(--text);box-shadow:0 8px 24px #10231c0a;transition:transform .2s,border-color .2s,box-shadow .2s}.category-card:hover{background:var(--card);border-color:var(--primary);box-shadow:0 14px 32px #2563eb1a;transform:translateY(-4px)}.category-card .category-icon{width:50px;height:50px;border:0;border-radius:12px;background:var(--primary-soft);color:var(--primary)}.category-card .category-icon svg{width:24px;height:24px}.category-card .count{background:var(--raised);color:var(--muted);border-radius:20px;padding:5px 10px;letter-spacing:.02em;text-transform:none}.category-card h3{font-size:20px;margin:24px 0 8px;color:var(--text)}.category-card p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}.category-content{flex:1}.category-action{display:flex;align-items:center;gap:8px;margin-top:22px;color:var(--primary);font-size:13px;font-weight:700}.category-action svg{transition:transform .2s}.category-card:hover .category-action svg{transform:translateX(4px)}
+@media(max-width:700px){.stats{padding:28px 0}.stats-grid{row-gap:22px}.stats-grid>div{padding-inline:6px;text-align:center}.stats strong{font-size:clamp(27px,7vw,34px)}.stats span{font-size:14px;line-height:1.35}.category-card{min-height:210px;padding:22px}.category-card h3{margin-top:18px}.announcement-copy{padding:10px 22px}.announcement-bar{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.announcement-track{animation:none;width:auto}.announcement-copy{min-width:0;width:100%;padding:10px 18px}.announcement-copy+ .announcement-copy{display:none}.announcement-message{white-space:normal;flex-wrap:wrap;gap:4px 8px;text-align:center}.category-card,.category-action svg{transition:none}.category-card:hover{transform:none}}
+
+@media(max-width:700px){
+  .stats-grid > div > strong{font-size:clamp(30px,8vw,36px)}
+  .stats-grid > div > strong span{font-size:inherit;font-weight:inherit}
+  .stats-grid > div > span{font-size:16px;line-height:1.35}
+}
+
+.syllabus-topics{margin:0;padding:0 22px 18px 40px;color:var(--muted);display:grid;gap:7px}
+
+/* Letter-by-letter loader inspired by the supplied Uiverse animation. */
+.zeta-loader-overlay{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;pointer-events:none;background:rgba(255,255,255,.24);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.dark .zeta-loader-overlay{background:rgba(15,17,23,.3)}
+.zeta-loader-word{display:flex;align-items:center;justify-content:center;overflow:hidden;padding:.2em .1em;color:#2563EB;font-family:var(--font-poppins),sans-serif;font-size:clamp(28px,7vw,56px);font-weight:700;letter-spacing:.04em;line-height:1.25}
+.zeta-loader-word>span{display:inline-block;animation:zeta-hide-and-seek 1s alternate infinite cubic-bezier(.86,0,.07,1);transform:translateY(115%)}
+@keyframes zeta-hide-and-seek{from{transform:translateY(115%)}to{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.zeta-loader-word>span{animation:none;transform:none}}

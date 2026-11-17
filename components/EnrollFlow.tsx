@@ -1,4 +1,5 @@
 "use client";
+import { WHATSAPP_NUMBER } from "@/lib/contact";
 
 import { useEffect, useRef, useState, type FormEvent, type InputHTMLAttributes, type ReactNode } from "react";
 import Link from "next/link";
@@ -83,7 +84,7 @@ export function EnrollFlow({ courses, initialCourse, courseWasPrefilled, referre
   const [motionReady, setMotionReady] = useState(false);
   const reducedMotion = useReducedMotion();
   const successHeading = useRef<HTMLHeadingElement>(null);
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923001234567";
+  const whatsappNumber = WHATSAPP_NUMBER;
   const whatsappHref = `https://wa.me/${whatsappNumber}`;
 
   useEffect(() => setMotionReady(true), []);

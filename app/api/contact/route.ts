@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
 export async function POST() {
-  // TODO: Connect the real contact form backend.
-  return NextResponse.json({ ok: true });
+  // No delivery service is configured yet; do not report unsent messages as received.
+  return NextResponse.json({ ok: false }, { status: 503 });
 }

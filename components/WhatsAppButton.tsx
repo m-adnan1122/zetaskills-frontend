@@ -1,4 +1,5 @@
 "use client";
+import { WHATSAPP_NUMBER } from "@/lib/contact";
 
 import { MessageCircle } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
@@ -6,7 +7,7 @@ import { useEffect, useState } from "react";
 
 export function WhatsAppButton() {
   const [ready, setReady] = useState(false);
-  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923001234567";
+  const number = WHATSAPP_NUMBER;
   useEffect(() => setReady(true), []);
   if (!ready) return <a className="whatsapp" href={`https://wa.me/${number}`} aria-label="Chat with ZetaSkills on WhatsApp"><MessageCircle size={24} /></a>;
   return <AnimatedWhatsApp number={number} />;

@@ -1,5 +1,6 @@
 "use client";
 import { useState, type FormEvent } from "react";
+import { ZetaLoader } from "@/components/ZetaLoader";
 
 export function ContactForm() {
   const [status, setStatus] = useState("");
@@ -29,6 +30,7 @@ export function ContactForm() {
   }
 
   return <form className="contact-form" onSubmit={submit}>
+    <ZetaLoader active={isSubmitting} />
     <h3>Get in touch</h3>
     <p>We&apos;d love to hear from you. Please fill out this form.</p>
     <div className="form-pair">

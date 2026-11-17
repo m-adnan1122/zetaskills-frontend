@@ -1,23 +1,2040 @@
 [
- {"id":1,"slug":"ai-tools-mastery","title":"AI Tools Mastery","category":"ai","badge":"HOT","duration":"2 Months","fee":20000,"description":"Use popular AI tools for everyday creative and work tasks.","image":"/images/courses/ai-tools-mastery.png","tools":["ChatGPT","Claude","Midjourney"],"syllabus":[{"week":1,"topic":"AI tool basics"},{"week":2,"topic":"Text and image tools"}],"learn":["Explore AI tools","Write useful prompts","Create text content","Generate images","Review AI output","Build a simple workflow"],"prerequisites":"No prior experience required."},
- {"id":2,"slug":"ai-automation-workflows-n8n","title":"AI Automation & Workflows (n8n)","category":"ai","badge":"HOT","duration":"3 Months","fee":25000,"description":"Connect tools and build practical automated workflows.","tools":["n8n","ChatGPT","APIs"],"syllabus":[{"week":1,"topic":"Workflow basics"},{"week":2,"topic":"Automation with n8n"}],"learn":["Understand workflows","Use n8n nodes","Connect services","Work with AI steps","Handle workflow data","Test automations"],"prerequisites":"Basic computer skills."},
- {"id":3,"slug":"prompt-engineering","title":"Prompt Engineering","category":"ai","badge":null,"duration":"1.5 Months","fee":20000,"description":"Write clear prompts for common AI tasks.","tools":["ChatGPT","Claude","Gemini"],"syllabus":[{"week":1,"topic":"Prompt fundamentals"},{"week":2,"topic":"Prompt practice"}],"learn":["Write clear prompts","Set task context","Refine responses","Use examples","Check outputs","Organize prompt sets"],"prerequisites":"No prior experience required."},
- {"id":4,"slug":"ai-video-editing","title":"AI Video Editing","category":"ai","badge":"NEW","duration":"2 Months","fee":20000,"description":"Create and edit videos using AI-assisted tools.","tools":["CapCut","Canva","AI tools"],"syllabus":[{"week":1,"topic":"Video basics"},{"week":2,"topic":"AI editing tools"}],"learn":["Plan short videos","Edit video clips","Add captions","Use AI features","Improve audio","Export projects"],"prerequisites":"Basic computer skills."},
- {"id":5,"slug":"ai-powered-seo-geo","title":"AI-Powered SEO & GEO","category":"ai","badge":"NEW","duration":"3 Months","fee":30000,"description":"Learn search optimization with practical AI tools.","tools":["Search tools","ChatGPT","Analytics"],"syllabus":[{"week":1,"topic":"Search fundamentals"},{"week":2,"topic":"AI-assisted research"}],"learn":["Research search topics","Review search intent","Plan content","Use AI responsibly","Check page basics","Measure results"],"prerequisites":"Basic web browsing skills."},
- {"id":6,"slug":"mern-stack-development","title":"MERN Stack Development","category":"web","badge":null,"duration":"3 Months","fee":40000,"description":"Build web applications with MongoDB, Express, React and Node.","tools":["MongoDB","React","Node.js"],"syllabus":[{"week":1,"topic":"Web development basics"},{"week":2,"topic":"React applications"}],"learn":["Build page layouts","Use JavaScript","Create React interfaces","Build APIs","Store application data","Connect a web app"],"prerequisites":"Basic computer skills."},
- {"id":7,"slug":"php-laravel","title":"PHP & Laravel","category":"web","badge":null,"duration":"3 Months","fee":30000,"description":"Create web applications with PHP and Laravel.","tools":["PHP","Laravel","MySQL"],"syllabus":[{"week":1,"topic":"PHP basics"},{"week":2,"topic":"Laravel basics"}],"learn":["Write PHP code","Use Laravel routing","Build web pages","Work with databases","Create forms","Test application flows"],"prerequisites":"Basic computer skills."},
- {"id":8,"slug":"wordpress-development","title":"WordPress Development","category":"web","badge":null,"duration":"2 Months","fee":25000,"description":"Build and manage websites with WordPress.","tools":["WordPress","Elementor","WooCommerce"],"syllabus":[{"week":1,"topic":"WordPress setup"},{"week":2,"topic":"Site building"}],"learn":["Set up WordPress","Choose themes","Create pages","Use plugins","Manage site content","Build a simple website"],"prerequisites":"No prior experience required."},
- {"id":9,"slug":"shopify-store-development","title":"Shopify Store Development","category":"web","badge":null,"duration":"2 Months","fee":20000,"description":"Set up and customize a Shopify store.","tools":["Shopify","Canva","Payments"],"syllabus":[{"week":1,"topic":"Store setup"},{"week":2,"topic":"Store customization"}],"learn":["Set up a store","Add products","Customize a theme","Organize collections","Review store settings","Prepare store pages"],"prerequisites":"Basic computer skills."},
- {"id":10,"slug":"graphic-designing","title":"Graphic Designing","category":"design","badge":null,"duration":"3 Months","fee":18000,"description":"Learn design principles and create digital graphics.","tools":["Photoshop","Illustrator","Canva"],"syllabus":[{"week":1,"topic":"Design basics"},{"week":2,"topic":"Digital graphics"}],"learn":["Use layout basics","Work with color","Edit images","Create graphics","Prepare social posts","Export design files"],"prerequisites":"No prior experience required."},
- {"id":11,"slug":"ui-ux-design","title":"UI/UX Design","category":"design","badge":"NEW","duration":"3 Months","fee":22000,"description":"Plan and design clear user interfaces.","tools":["Figma","FigJam","Prototyping"],"syllabus":[{"week":1,"topic":"Interface design basics"},{"week":2,"topic":"Figma practice"}],"learn":["Understand user needs","Plan page structure","Create wireframes","Design interfaces","Build prototypes","Review designs"],"prerequisites":"No prior experience required."},
- {"id":12,"slug":"amazon-fba-dropshipping","title":"Amazon FBA & Dropshipping","category":"ecommerce","badge":null,"duration":"3 Months","fee":40000,"description":"Learn the basics of Amazon selling models.","tools":["Amazon Seller Central","Spreadsheets","Research tools"],"syllabus":[{"week":1,"topic":"Marketplace basics"},{"week":2,"topic":"Product research"}],"learn":["Understand selling models","Research products","Review listings","Explore seller tools","Plan product pages","Understand order flows"],"prerequisites":"Basic computer skills."},
- {"id":13,"slug":"ebay-selling-store-setup","title":"eBay Selling & Store Setup","category":"ecommerce","badge":null,"duration":"2 Months","fee":25000,"description":"Learn how to set up and manage an eBay store.","tools":["eBay","Spreadsheets","Image tools"],"syllabus":[{"week":1,"topic":"eBay basics"},{"week":2,"topic":"Store setup"}],"learn":["Explore eBay tools","Set up store pages","Prepare listings","Organize products","Review order steps","Manage store content"],"prerequisites":"Basic computer skills."},
- {"id":14,"slug":"etsy-handmade-marketplace","title":"Etsy & Handmade Marketplace","category":"ecommerce","badge":null,"duration":"1.5 Months","fee":20000,"description":"Create product listings for handmade marketplaces.","tools":["Etsy","Canva","Spreadsheets"],"syllabus":[{"week":1,"topic":"Marketplace basics"},{"week":2,"topic":"Listing practice"}],"learn":["Explore Etsy basics","Plan product listings","Write product details","Prepare product images","Organize a shop","Review shop pages"],"prerequisites":"Basic computer skills."},
- {"id":15,"slug":"upwork-fiverr-freelancing","title":"Upwork & Fiverr Freelancing","category":"ecommerce","badge":null,"duration":"1 Month","fee":30000,"description":"Set up a clear freelance profile and service listing.","tools":["Upwork","Fiverr","Canva"],"syllabus":[{"week":1,"topic":"Freelancing basics"},{"week":2,"topic":"Profiles and services"}],"learn":["Explore freelance platforms","Prepare a profile","Describe services","Plan sample work","Write proposals","Communicate with clients"],"prerequisites":"Basic computer skills."},
- {"id":16,"slug":"aso-app-store-optimization","title":"ASO - App Store Optimization","category":"ecommerce","badge":null,"duration":"1.5 Months","fee":30000,"description":"Learn how app store listings are planned and improved.","tools":["App Store Connect","Play Console","Analytics"],"syllabus":[{"week":1,"topic":"App store basics"},{"week":2,"topic":"Listing review"}],"learn":["Understand ASO basics","Review app listings","Research keywords","Plan listing text","Prepare store visuals","Read listing metrics"],"prerequisites":"Basic computer skills."},
- {"id":17,"slug":"social-media-marketing-ai","title":"Social Media Marketing + AI","category":"marketing","badge":"NEW","duration":"2 Months","fee":16000,"description":"Plan social media content with practical AI tools.","tools":["Meta Business Suite","Canva","ChatGPT"],"syllabus":[{"week":1,"topic":"Social media basics"},{"week":2,"topic":"Content planning"}],"learn":["Plan a content calendar","Write social posts","Prepare simple graphics","Explore platform tools","Use AI for ideas","Review engagement data"],"prerequisites":"No prior experience required."},
- {"id":18,"slug":"digital-marketing-complete","title":"Digital Marketing (Complete)","category":"marketing","badge":null,"duration":"2 Months","fee":40000,"description":"Explore key digital marketing channels and tools.","tools":["Google Ads","Analytics","Meta Business Suite"],"syllabus":[{"week":1,"topic":"Digital marketing basics"},{"week":2,"topic":"Channel planning"}],"learn":["Explore digital channels","Plan online content","Review search basics","Understand ad campaigns","Use analytics tools","Measure campaign activity"],"prerequisites":"Basic computer skills."},
- {"id":19,"slug":"flutter-mobile-development","title":"Flutter Mobile Development","category":"mobile","badge":null,"duration":"4 Months","fee":40000,"description":"Create mobile applications with Flutter and Dart.","tools":["Flutter","Dart","Android Studio"],"syllabus":[{"week":1,"topic":"Dart basics"},{"week":2,"topic":"Flutter interfaces"}],"learn":["Write Dart basics","Build app layouts","Navigate between screens","Work with app data","Test on devices","Prepare an app project"],"prerequisites":"Basic programming concepts helpful."},
- {"id":20,"slug":"react-native","title":"React Native","category":"mobile","badge":null,"duration":"4 Months","fee":40000,"description":"Build mobile apps using React Native.","tools":["React Native","JavaScript","Expo"],"syllabus":[{"week":1,"topic":"React Native basics"},{"week":2,"topic":"Mobile interfaces"}],"learn":["Use JavaScript basics","Build app screens","Navigate between screens","Work with app data","Test mobile layouts","Prepare a sample app"],"prerequisites":"Basic programming concepts helpful."},
- {"id":21,"slug":"game-development-unity","title":"Game Development (Unity)","category":"mobile","badge":null,"duration":"4 Months","fee":50000,"description":"Learn game development basics with Unity.","tools":["Unity","C#","Blender"],"syllabus":[{"week":1,"topic":"Unity editor basics"},{"week":2,"topic":"Game objects"}],"learn":["Explore the Unity editor","Use basic C#","Create scenes","Add game objects","Build simple interactions","Test a small game"],"prerequisites":"No prior experience required."}
+  {
+    "id": 1,
+    "slug": "ai-tools-mastery",
+    "title": "AI Tools Mastery",
+    "category": "ai",
+    "badge": "HOT",
+    "duration": "8 Weeks",
+    "description": "Use popular AI tools for everyday creative and work tasks.",
+    "image": "/images/courses/ai-tools-mastery.png",
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Midjourney"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "AI foundations",
+        "topics": [
+          "How AI tools work",
+          "Common use cases and limitations",
+          "Responsible and private use"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Prompting basics",
+        "topics": [
+          "Write clear instructions",
+          "Add context and constraints",
+          "Iterate on responses"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Research and writing",
+        "topics": [
+          "Summarize source material",
+          "Draft and edit content",
+          "Check facts and citations"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Visual creation",
+        "topics": [
+          "Write image prompts",
+          "Explore styles and composition",
+          "Review and refine outputs"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Productivity workflows",
+        "topics": [
+          "Draft emails and documents",
+          "Organize notes and ideas",
+          "Use AI with spreadsheets"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "AI for creative work",
+        "topics": [
+          "Brainstorm campaigns",
+          "Create social media copy",
+          "Plan a visual content set"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Quality and safety",
+        "topics": [
+          "Identify hallucinations",
+          "Protect sensitive information",
+          "Review copyright and bias"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Practical project",
+        "topics": [
+          "Choose a real use case",
+          "Combine AI tools in a workflow",
+          "Present and evaluate the result"
+        ]
+      }
+    ],
+    "learn": [
+      "Explore AI tools",
+      "Write useful prompts",
+      "Create text content",
+      "Generate images",
+      "Review AI output",
+      "Build a simple workflow"
+    ],
+    "prerequisites": "No prior experience required."
+  },
+  {
+    "id": 2,
+    "slug": "ai-automation-workflows-n8n",
+    "title": "AI Automation & Workflows (n8n)",
+    "category": "ai",
+    "badge": "HOT",
+    "duration": "8 Weeks",
+    "description": "Connect tools and build practical automated workflows.",
+    "tools": [
+      "n8n",
+      "ChatGPT",
+      "APIs"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Automation foundations",
+        "topics": [
+          "Map a business process",
+          "Identify triggers and actions",
+          "Plan workflow inputs and outputs"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Getting started with n8n",
+        "topics": [
+          "Navigate the editor",
+          "Create nodes and connections",
+          "Run and inspect a workflow"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Triggers and data",
+        "topics": [
+          "Use manual and scheduled triggers",
+          "Read and transform JSON",
+          "Map data between nodes"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "APIs and webhooks",
+        "topics": [
+          "Understand HTTP methods",
+          "Receive webhook requests",
+          "Connect to an API securely"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Workflow logic",
+        "topics": [
+          "Use conditions and branching",
+          "Transform fields with expressions",
+          "Handle lists and loops"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "AI-powered workflows",
+        "topics": [
+          "Connect an AI service",
+          "Structure prompts with workflow data",
+          "Validate AI responses"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Reliability and security",
+        "topics": [
+          "Handle errors and retries",
+          "Protect credentials",
+          "Test and monitor executions"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Automation project",
+        "topics": [
+          "Design an end-to-end workflow",
+          "Build and test integrations",
+          "Document and demonstrate the result"
+        ]
+      }
+    ],
+    "learn": [
+      "Understand workflows",
+      "Use n8n nodes",
+      "Connect services",
+      "Work with AI steps",
+      "Handle workflow data",
+      "Test automations"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 3,
+    "slug": "prompt-engineering",
+    "title": "Prompt Engineering",
+    "category": "ai",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Write clear prompts for common AI tasks.",
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Language model foundations",
+        "topics": [
+          "Understand model capabilities",
+          "Recognize limitations and hallucinations",
+          "Use AI responsibly"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Writing clear prompts",
+        "topics": [
+          "Define the task and audience",
+          "Add context and constraints",
+          "Specify the desired output"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Prompt structure",
+        "topics": [
+          "Use roles and instructions",
+          "Provide examples",
+          "Apply delimiters and templates"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Reasoning and decomposition",
+        "topics": [
+          "Break down complex tasks",
+          "Request structured steps",
+          "Check intermediate results"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Research and writing",
+        "topics": [
+          "Summarize source material",
+          "Draft for different audiences",
+          "Verify claims and citations"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Structured outputs",
+        "topics": [
+          "Request JSON and tables",
+          "Define output fields",
+          "Validate and repair responses"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Evaluation and refinement",
+        "topics": [
+          "Create test cases",
+          "Compare prompt variants",
+          "Reduce ambiguity and bias"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Prompt portfolio",
+        "topics": [
+          "Choose a practical use case",
+          "Build reusable prompt templates",
+          "Present results and lessons"
+        ]
+      }
+    ],
+    "learn": [
+      "Write clear prompts",
+      "Set task context",
+      "Refine responses",
+      "Use examples",
+      "Check outputs",
+      "Organize prompt sets"
+    ],
+    "prerequisites": "No prior experience required."
+  },
+  {
+    "id": 4,
+    "slug": "ai-video-editing",
+    "title": "AI Video Editing",
+    "category": "ai",
+    "badge": "NEW",
+    "duration": "8 Weeks",
+    "description": "Create and edit videos using AI-assisted tools.",
+    "tools": [
+      "CapCut",
+      "Canva",
+      "AI tools"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Video fundamentals",
+        "topics": [
+          "Plan a video concept",
+          "Understand frame rate and aspect ratio",
+          "Organize footage and assets"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Editing foundations",
+        "topics": [
+          "Import and arrange clips",
+          "Trim and sequence footage",
+          "Add transitions with purpose"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "AI-assisted production",
+        "topics": [
+          "Explore AI editing tools",
+          "Generate captions and transcripts",
+          "Use automated cuts responsibly"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Audio and voice",
+        "topics": [
+          "Clean up audio",
+          "Add music and voiceover",
+          "Balance sound levels"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Text and visual design",
+        "topics": [
+          "Create titles and lower thirds",
+          "Apply consistent typography",
+          "Add basic graphics"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Color and effects",
+        "topics": [
+          "Correct exposure and color",
+          "Use effects selectively",
+          "Match clips for consistency"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Platform-ready exports",
+        "topics": [
+          "Adapt aspect ratios",
+          "Choose export settings",
+          "Review accessibility and captions"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Final video project",
+        "topics": [
+          "Edit a complete short video",
+          "Collect feedback and revise",
+          "Export and present the final cut"
+        ]
+      }
+    ],
+    "learn": [
+      "Plan short videos",
+      "Edit video clips",
+      "Add captions",
+      "Use AI features",
+      "Improve audio",
+      "Export projects"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 5,
+    "slug": "ai-powered-seo-geo",
+    "title": "AI-Powered SEO & GEO",
+    "category": "ai",
+    "badge": "NEW",
+    "duration": "8 Weeks",
+    "description": "Learn search optimization with practical AI tools.",
+    "tools": [
+      "Search tools",
+      "ChatGPT",
+      "Analytics"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Search foundations",
+        "topics": [
+          "How search engines discover pages",
+          "Understand search intent",
+          "Introduce AI answer visibility"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Research and discovery",
+        "topics": [
+          "Research audience questions",
+          "Group keywords by intent",
+          "Review search results"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "AI-assisted planning",
+        "topics": [
+          "Use AI to brainstorm topics",
+          "Check research against sources",
+          "Create a content brief"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "On-page optimization",
+        "topics": [
+          "Write useful titles and headings",
+          "Improve page structure and links",
+          "Optimize relevant metadata"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Content for AI answers",
+        "topics": [
+          "Answer questions clearly",
+          "Support claims with credible sources",
+          "Structure useful summaries"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Technical foundations",
+        "topics": [
+          "Review indexing and crawlability",
+          "Understand sitemaps and robots directives",
+          "Check mobile performance"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Measurement",
+        "topics": [
+          "Explore search performance reports",
+          "Track relevant queries and pages",
+          "Interpret engagement and conversions"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "SEO and GEO project",
+        "topics": [
+          "Audit a sample page",
+          "Prioritize improvements",
+          "Present a measurement plan"
+        ]
+      }
+    ],
+    "learn": [
+      "Research search topics",
+      "Review search intent",
+      "Plan content",
+      "Use AI responsibly",
+      "Check page basics",
+      "Measure results"
+    ],
+    "prerequisites": "Basic web browsing skills."
+  },
+  {
+    "id": 6,
+    "slug": "mern-stack-development",
+    "title": "MERN Stack Development",
+    "category": "web",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Build web applications with MongoDB, Express, React and Node.",
+    "tools": [
+      "MongoDB",
+      "React",
+      "Node.js"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "JavaScript and web foundations",
+        "topics": [
+          "Review HTML and CSS",
+          "Use modern JavaScript syntax",
+          "Work with asynchronous requests"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "React foundations",
+        "topics": [
+          "Build components and JSX",
+          "Pass props between components",
+          "Render lists and conditional content"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "React state and navigation",
+        "topics": [
+          "Manage state and events",
+          "Use hooks for side effects",
+          "Navigate with client-side routing"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Node.js and Express",
+        "topics": [
+          "Set up a Node project",
+          "Create Express routes",
+          "Handle middleware and requests"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "REST APIs",
+        "topics": [
+          "Design CRUD endpoints",
+          "Validate request data",
+          "Handle errors and HTTP responses"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "MongoDB and Mongoose",
+        "topics": [
+          "Model documents and collections",
+          "Create schemas and relationships",
+          "Query and update records"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Authentication and integration",
+        "topics": [
+          "Build secure login flows",
+          "Connect React to APIs",
+          "Protect routes and manage sessions"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Full-stack project",
+        "topics": [
+          "Build an integrated MERN application",
+          "Test and fix core flows",
+          "Deploy and present the project"
+        ]
+      }
+    ],
+    "learn": [
+      "Build page layouts",
+      "Use JavaScript",
+      "Create React interfaces",
+      "Build APIs",
+      "Store application data",
+      "Connect a web app"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 7,
+    "slug": "php-laravel",
+    "title": "PHP & Laravel",
+    "category": "web",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Create web applications with PHP and Laravel.",
+    "tools": [
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "PHP foundations",
+        "topics": [
+          "Set up PHP and development tools",
+          "Use variables and control flow",
+          "Write functions and arrays"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "PHP web development",
+        "topics": [
+          "Handle forms and requests",
+          "Work with sessions",
+          "Connect PHP to a database"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Laravel foundations",
+        "topics": [
+          "Set up a Laravel project",
+          "Understand routing and controllers",
+          "Configure environment settings"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Views and forms",
+        "topics": [
+          "Create Blade templates",
+          "Build reusable layouts",
+          "Validate form input"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Database and Eloquent",
+        "topics": [
+          "Create migrations and models",
+          "Use Eloquent queries",
+          "Define model relationships"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Application features",
+        "topics": [
+          "Implement CRUD operations",
+          "Add authentication",
+          "Protect routes and validate permissions"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Testing and deployment",
+        "topics": [
+          "Handle errors and logs",
+          "Test important application flows",
+          "Prepare deployment configuration"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Laravel project",
+        "topics": [
+          "Plan a small web application",
+          "Implement core features",
+          "Review and present the project"
+        ]
+      }
+    ],
+    "learn": [
+      "Write PHP code",
+      "Use Laravel routing",
+      "Build web pages",
+      "Work with databases",
+      "Create forms",
+      "Test application flows"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 8,
+    "slug": "wordpress-development",
+    "title": "WordPress Development",
+    "category": "web",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Build and manage websites with WordPress.",
+    "tools": [
+      "WordPress",
+      "Elementor",
+      "WooCommerce"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "WordPress foundations",
+        "topics": [
+          "Understand hosting and domains",
+          "Install WordPress",
+          "Explore the dashboard"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Site structure",
+        "topics": [
+          "Configure site settings",
+          "Create pages and posts",
+          "Organize menus and categories"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Themes and customization",
+        "topics": [
+          "Choose and configure a theme",
+          "Customize branding and layout",
+          "Manage responsive design"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Page building",
+        "topics": [
+          "Create layouts with a page builder",
+          "Add media and content blocks",
+          "Build a landing page"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Plugins and forms",
+        "topics": [
+          "Install and evaluate plugins",
+          "Create contact forms",
+          "Manage user roles"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Commerce basics",
+        "topics": [
+          "Explore WooCommerce setup",
+          "Add products and categories",
+          "Review checkout and payment settings"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Security and maintenance",
+        "topics": [
+          "Update themes and plugins",
+          "Set up backups",
+          "Improve basic performance and SEO"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Website project",
+        "topics": [
+          "Plan a complete website",
+          "Build and review key pages",
+          "Prepare a launch checklist"
+        ]
+      }
+    ],
+    "learn": [
+      "Set up WordPress",
+      "Choose themes",
+      "Create pages",
+      "Use plugins",
+      "Manage site content",
+      "Build a simple website"
+    ],
+    "prerequisites": "No prior experience required."
+  },
+  {
+    "id": 9,
+    "slug": "shopify-store-development",
+    "title": "Shopify Store Development",
+    "category": "web",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Set up and customize a Shopify store.",
+    "tools": [
+      "Shopify",
+      "Canva",
+      "Payments"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "E-commerce foundations",
+        "topics": [
+          "Understand store structure",
+          "Set up a Shopify account",
+          "Configure basic store settings"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Products and collections",
+        "topics": [
+          "Create product listings",
+          "Organize collections",
+          "Set pricing and inventory"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Theme customization",
+        "topics": [
+          "Choose a theme",
+          "Customize sections and branding",
+          "Review mobile layouts"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Store content",
+        "topics": [
+          "Create navigation menus",
+          "Build information pages",
+          "Prepare product imagery"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Checkout and fulfillment",
+        "topics": [
+          "Configure shipping settings",
+          "Review payment options",
+          "Understand order workflows"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Marketing foundations",
+        "topics": [
+          "Set up store SEO basics",
+          "Create discount codes",
+          "Connect sales channels"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Store operations",
+        "topics": [
+          "Manage orders and customers",
+          "Review analytics",
+          "Test policies and notifications"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Store project",
+        "topics": [
+          "Build a sample storefront",
+          "Test the customer journey",
+          "Prepare a launch checklist"
+        ]
+      }
+    ],
+    "learn": [
+      "Set up a store",
+      "Add products",
+      "Customize a theme",
+      "Organize collections",
+      "Review store settings",
+      "Prepare store pages"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 10,
+    "slug": "graphic-designing",
+    "title": "Graphic Designing",
+    "category": "design",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Learn design principles and create digital graphics.",
+    "tools": [
+      "Photoshop",
+      "Illustrator",
+      "Canva"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Design foundations",
+        "topics": [
+          "Understand visual hierarchy",
+          "Use composition and alignment",
+          "Apply basic design principles"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Color and typography",
+        "topics": [
+          "Build a color palette",
+          "Choose compatible typefaces",
+          "Create readable layouts"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Image editing",
+        "topics": [
+          "Navigate Photoshop tools",
+          "Make selections and masks",
+          "Adjust images and color"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Vector design",
+        "topics": [
+          "Explore Illustrator tools",
+          "Create shapes and paths",
+          "Work with vector artwork"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Brand identity",
+        "topics": [
+          "Develop a visual concept",
+          "Create a simple logo",
+          "Apply brand colors and typography"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Social media graphics",
+        "topics": [
+          "Plan a content set",
+          "Create layouts for social platforms",
+          "Adapt designs to different sizes"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Production and delivery",
+        "topics": [
+          "Prepare files for digital and print",
+          "Choose suitable export formats",
+          "Organize design assets"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Design portfolio",
+        "topics": [
+          "Develop a cohesive project",
+          "Incorporate critique and revisions",
+          "Present final work"
+        ]
+      }
+    ],
+    "learn": [
+      "Use layout basics",
+      "Work with color",
+      "Edit images",
+      "Create graphics",
+      "Prepare social posts",
+      "Export design files"
+    ],
+    "prerequisites": "No prior experience required."
+  },
+  {
+    "id": 11,
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "category": "design",
+    "badge": "NEW",
+    "duration": "8 Weeks",
+    "description": "Plan and design clear user interfaces.",
+    "tools": [
+      "Figma",
+      "FigJam",
+      "Prototyping"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "UX foundations",
+        "topics": [
+          "Understand the design process",
+          "Identify user needs",
+          "Define a design problem"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "User research",
+        "topics": [
+          "Plan research questions",
+          "Conduct interviews or surveys",
+          "Summarize findings"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Information architecture",
+        "topics": [
+          "Map user journeys",
+          "Organize content and navigation",
+          "Create user flows"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Wireframing",
+        "topics": [
+          "Sketch interface ideas",
+          "Create low-fidelity wireframes",
+          "Review page hierarchy"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Visual design in Figma",
+        "topics": [
+          "Use frames and layout tools",
+          "Apply typography and color",
+          "Create reusable components"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Interactive prototyping",
+        "topics": [
+          "Link screens and interactions",
+          "Design common interface states",
+          "Review responsive behavior"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Usability testing",
+        "topics": [
+          "Prepare a testing scenario",
+          "Observe user interactions",
+          "Prioritize findings"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Portfolio project",
+        "topics": [
+          "Refine a complete interface",
+          "Document design decisions",
+          "Present a clickable prototype"
+        ]
+      }
+    ],
+    "learn": [
+      "Understand user needs",
+      "Plan page structure",
+      "Create wireframes",
+      "Design interfaces",
+      "Build prototypes",
+      "Review designs"
+    ],
+    "prerequisites": "No prior experience required."
+  },
+  {
+    "id": 12,
+    "slug": "amazon-fba-dropshipping",
+    "title": "Amazon FBA & Dropshipping",
+    "category": "ecommerce",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Learn the basics of Amazon selling models.",
+    "tools": [
+      "Amazon Seller Central",
+      "Spreadsheets",
+      "Research tools"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Selling foundations",
+        "topics": [
+          "Compare Amazon selling models",
+          "Understand FBA and dropshipping",
+          "Review marketplace policies"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Market research",
+        "topics": [
+          "Identify product opportunities",
+          "Analyze demand and competition",
+          "Estimate costs and margins"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Seller account basics",
+        "topics": [
+          "Explore Seller Central",
+          "Review account requirements",
+          "Understand seller performance metrics"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Product sourcing",
+        "topics": [
+          "Research suppliers",
+          "Compare sourcing options",
+          "Review quality and shipping considerations"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Listings and content",
+        "topics": [
+          "Write product titles and descriptions",
+          "Prepare product imagery",
+          "Review listing requirements"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Fulfillment and operations",
+        "topics": [
+          "Understand FBA preparation",
+          "Review inventory and orders",
+          "Handle returns and customer support"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Marketing and analytics",
+        "topics": [
+          "Explore advertising basics",
+          "Read sales reports",
+          "Review account health"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Marketplace project",
+        "topics": [
+          "Prepare a sample product plan",
+          "Create a listing outline",
+          "Present cost and fulfillment decisions"
+        ]
+      }
+    ],
+    "learn": [
+      "Understand selling models",
+      "Research products",
+      "Review listings",
+      "Explore seller tools",
+      "Plan product pages",
+      "Understand order flows"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 13,
+    "slug": "ebay-selling-store-setup",
+    "title": "eBay Selling & Store Setup",
+    "category": "ecommerce",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Learn how to set up and manage an eBay store.",
+    "tools": [
+      "eBay",
+      "Spreadsheets",
+      "Image tools"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Marketplace foundations",
+        "topics": [
+          "Explore eBay selling models",
+          "Review seller requirements",
+          "Understand fees and policies"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Account and store setup",
+        "topics": [
+          "Configure seller settings",
+          "Create a store profile",
+          "Set business preferences"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Product research",
+        "topics": [
+          "Identify product categories",
+          "Compare similar listings",
+          "Estimate costs and demand"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Creating listings",
+        "topics": [
+          "Write titles and descriptions",
+          "Prepare product photos",
+          "Set item specifics and conditions"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Pricing and inventory",
+        "topics": [
+          "Choose listing formats",
+          "Plan prices and quantities",
+          "Organize inventory records"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Shipping and fulfillment",
+        "topics": [
+          "Configure shipping options",
+          "Understand order processing",
+          "Manage returns and tracking"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Customer service and performance",
+        "topics": [
+          "Communicate with buyers",
+          "Handle common disputes",
+          "Review seller metrics"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Store project",
+        "topics": [
+          "Build sample listings",
+          "Review the buyer journey",
+          "Present a store management plan"
+        ]
+      }
+    ],
+    "learn": [
+      "Explore eBay tools",
+      "Set up store pages",
+      "Prepare listings",
+      "Organize products",
+      "Review order steps",
+      "Manage store content"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 14,
+    "slug": "etsy-handmade-marketplace",
+    "title": "Etsy & Handmade Marketplace",
+    "category": "ecommerce",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Create product listings for handmade marketplaces.",
+    "tools": [
+      "Etsy",
+      "Canva",
+      "Spreadsheets"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Etsy foundations",
+        "topics": [
+          "Explore marketplace rules",
+          "Identify eligible products",
+          "Understand shop setup"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Product and audience research",
+        "topics": [
+          "Define a target customer",
+          "Research comparable products",
+          "Plan a product collection"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Shop setup",
+        "topics": [
+          "Create shop branding",
+          "Configure shop settings",
+          "Write an introductory profile"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Listing creation",
+        "topics": [
+          "Write clear product titles",
+          "Prepare descriptions and attributes",
+          "Organize listing variations"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Product visuals",
+        "topics": [
+          "Plan product photography",
+          "Edit and resize images",
+          "Create consistent listing graphics"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Pricing and fulfillment",
+        "topics": [
+          "Estimate product costs",
+          "Plan shipping and packaging",
+          "Review payment and return policies"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Discovery and promotion",
+        "topics": [
+          "Explore Etsy search basics",
+          "Use relevant tags",
+          "Review shop analytics"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Shop project",
+        "topics": [
+          "Prepare a sample collection",
+          "Create a complete listing",
+          "Review and present the shop plan"
+        ]
+      }
+    ],
+    "learn": [
+      "Explore Etsy basics",
+      "Plan product listings",
+      "Write product details",
+      "Prepare product images",
+      "Organize a shop",
+      "Review shop pages"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 15,
+    "slug": "upwork-fiverr-freelancing",
+    "title": "Upwork & Fiverr Freelancing",
+    "category": "ecommerce",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Set up a clear freelance profile and service listing.",
+    "tools": [
+      "Upwork",
+      "Fiverr",
+      "Canva"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Freelancing foundations",
+        "topics": [
+          "Identify marketable skills",
+          "Compare Upwork and Fiverr",
+          "Review platform rules"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Positioning and services",
+        "topics": [
+          "Define a target client",
+          "Choose a service niche",
+          "Describe an offer clearly"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Profile building",
+        "topics": [
+          "Write a professional overview",
+          "Choose relevant skills",
+          "Prepare a credible profile"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Portfolio preparation",
+        "topics": [
+          "Select sample projects",
+          "Explain project outcomes",
+          "Present work professionally"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Proposals and gigs",
+        "topics": [
+          "Write tailored proposals",
+          "Create a service listing",
+          "Define scope and deliverables"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Pricing and communication",
+        "topics": [
+          "Estimate project effort",
+          "Discuss requirements with clients",
+          "Set expectations and milestones"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Delivery and growth",
+        "topics": [
+          "Manage feedback and revisions",
+          "Deliver work professionally",
+          "Build repeat client relationships"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Freelancing project",
+        "topics": [
+          "Prepare a complete profile",
+          "Create a proposal and service listing",
+          "Present a client acquisition plan"
+        ]
+      }
+    ],
+    "learn": [
+      "Explore freelance platforms",
+      "Prepare a profile",
+      "Describe services",
+      "Plan sample work",
+      "Write proposals",
+      "Communicate with clients"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 16,
+    "slug": "aso-app-store-optimization",
+    "title": "ASO - App Store Optimization",
+    "category": "ecommerce",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Learn how app store listings are planned and improved.",
+    "tools": [
+      "App Store Connect",
+      "Play Console",
+      "Analytics"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "ASO foundations",
+        "topics": [
+          "Understand app store discovery",
+          "Compare major app stores",
+          "Identify listing elements"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Audience and competitor research",
+        "topics": [
+          "Define target users",
+          "Review competing apps",
+          "Collect relevant search terms"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Keyword research",
+        "topics": [
+          "Identify keyword opportunities",
+          "Group terms by intent",
+          "Prioritize relevant phrases"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Listing copy",
+        "topics": [
+          "Write app titles and subtitles",
+          "Draft clear descriptions",
+          "Apply store-specific requirements"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Store visuals",
+        "topics": [
+          "Plan app icons and screenshots",
+          "Create visual narratives",
+          "Review platform asset requirements"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Ratings and reviews",
+        "topics": [
+          "Understand review signals",
+          "Plan responses to feedback",
+          "Identify product improvement themes"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Measurement and experiments",
+        "topics": [
+          "Read store performance metrics",
+          "Plan listing experiments",
+          "Interpret results over time"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "ASO project",
+        "topics": [
+          "Audit a sample app listing",
+          "Prepare improved copy and visuals",
+          "Present a measurement plan"
+        ]
+      }
+    ],
+    "learn": [
+      "Understand ASO basics",
+      "Review app listings",
+      "Research keywords",
+      "Plan listing text",
+      "Prepare store visuals",
+      "Read listing metrics"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 17,
+    "slug": "social-media-marketing-ai",
+    "title": "Social Media Marketing + AI",
+    "category": "marketing",
+    "badge": "NEW",
+    "duration": "8 Weeks",
+    "description": "Plan social media content with practical AI tools.",
+    "tools": [
+      "Meta Business Suite",
+      "Canva",
+      "ChatGPT"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Social media foundations",
+        "topics": [
+          "Define marketing goals",
+          "Identify target audiences",
+          "Explore social platforms"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Content strategy",
+        "topics": [
+          "Choose content pillars",
+          "Plan a publishing calendar",
+          "Set a consistent brand voice"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "AI-assisted ideation",
+        "topics": [
+          "Generate content ideas",
+          "Draft and refine captions",
+          "Review AI output for accuracy"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Visual content",
+        "topics": [
+          "Create graphics in Canva",
+          "Apply brand styles",
+          "Adapt assets for each platform"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Video and engagement",
+        "topics": [
+          "Plan short-form videos",
+          "Write calls to action",
+          "Respond to audience interactions"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Publishing and management",
+        "topics": [
+          "Schedule posts",
+          "Use Meta Business Suite",
+          "Organize content approvals"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Measurement",
+        "topics": [
+          "Track engagement and reach",
+          "Interpret platform insights",
+          "Adjust the content plan"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Campaign project",
+        "topics": [
+          "Build a sample campaign",
+          "Prepare a week of posts",
+          "Present results and improvements"
+        ]
+      }
+    ],
+    "learn": [
+      "Plan a content calendar",
+      "Write social posts",
+      "Prepare simple graphics",
+      "Explore platform tools",
+      "Use AI for ideas",
+      "Review engagement data"
+    ],
+    "prerequisites": "No prior experience required."
+  },
+  {
+    "id": 18,
+    "slug": "digital-marketing-complete",
+    "title": "Digital Marketing (Complete)",
+    "category": "marketing",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Explore key digital marketing channels and tools.",
+    "tools": [
+      "Google Ads",
+      "Analytics",
+      "Meta Business Suite"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Marketing foundations",
+        "topics": [
+          "Define business goals",
+          "Understand customer journeys",
+          "Identify target audiences"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Content and SEO",
+        "topics": [
+          "Research audience topics",
+          "Plan helpful content",
+          "Review on-page SEO basics"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Social media marketing",
+        "topics": [
+          "Choose suitable channels",
+          "Create a content calendar",
+          "Measure engagement"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Paid advertising",
+        "topics": [
+          "Understand ad campaign structure",
+          "Explore audience targeting",
+          "Set goals and budgets"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Email marketing",
+        "topics": [
+          "Plan email campaigns",
+          "Write effective subject lines",
+          "Review consent and list hygiene"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Analytics and measurement",
+        "topics": [
+          "Explore analytics dashboards",
+          "Track conversions",
+          "Interpret campaign performance"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Campaign optimization",
+        "topics": [
+          "Compare channels and results",
+          "Identify opportunities to improve",
+          "Build a reporting summary"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Marketing project",
+        "topics": [
+          "Develop a channel strategy",
+          "Create sample campaign assets",
+          "Present a measurement plan"
+        ]
+      }
+    ],
+    "learn": [
+      "Explore digital channels",
+      "Plan online content",
+      "Review search basics",
+      "Understand ad campaigns",
+      "Use analytics tools",
+      "Measure campaign activity"
+    ],
+    "prerequisites": "Basic computer skills."
+  },
+  {
+    "id": 19,
+    "slug": "flutter-mobile-development",
+    "title": "Flutter Mobile Development",
+    "category": "mobile",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Create mobile applications with Flutter and Dart.",
+    "tools": [
+      "Flutter",
+      "Dart",
+      "Android Studio"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Dart foundations",
+        "topics": [
+          "Set up Flutter and Dart",
+          "Use variables and control flow",
+          "Write functions and classes"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "Flutter interface basics",
+        "topics": [
+          "Understand widgets and layout",
+          "Build reusable components",
+          "Apply themes and styling"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "User interaction",
+        "topics": [
+          "Handle input and events",
+          "Manage forms and validation",
+          "Build responsive screens"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Navigation and state",
+        "topics": [
+          "Navigate between screens",
+          "Manage local widget state",
+          "Pass data between screens"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Working with data",
+        "topics": [
+          "Use asynchronous Dart",
+          "Fetch data from an API",
+          "Parse and display JSON"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Persistence and services",
+        "topics": [
+          "Store simple local data",
+          "Handle loading and errors",
+          "Introduce app permissions"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Testing and debugging",
+        "topics": [
+          "Use Flutter debugging tools",
+          "Write basic widget tests",
+          "Test on different screen sizes"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Mobile app project",
+        "topics": [
+          "Build a small Flutter application",
+          "Refine core user flows",
+          "Prepare and present a build"
+        ]
+      }
+    ],
+    "learn": [
+      "Write Dart basics",
+      "Build app layouts",
+      "Navigate between screens",
+      "Work with app data",
+      "Test on devices",
+      "Prepare an app project"
+    ],
+    "prerequisites": "Basic programming concepts helpful."
+  },
+  {
+    "id": 20,
+    "slug": "react-native",
+    "title": "React Native",
+    "category": "mobile",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Build mobile apps using React Native.",
+    "tools": [
+      "React Native",
+      "JavaScript",
+      "Expo"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "JavaScript and React foundations",
+        "topics": [
+          "Review modern JavaScript",
+          "Understand React components and props",
+          "Use state and events"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "React Native setup",
+        "topics": [
+          "Set up Expo development tools",
+          "Explore native components",
+          "Run an app on a device or emulator"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Layouts and styling",
+        "topics": [
+          "Build responsive layouts",
+          "Use Flexbox",
+          "Style text and images"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Navigation and forms",
+        "topics": [
+          "Navigate between screens",
+          "Manage text input",
+          "Validate form fields"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "State and data",
+        "topics": [
+          "Use hooks for state and effects",
+          "Fetch data from an API",
+          "Handle loading and errors"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Device and local storage",
+        "topics": [
+          "Store simple data locally",
+          "Explore device APIs",
+          "Handle permissions responsibly"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Testing and debugging",
+        "topics": [
+          "Use development tools",
+          "Test mobile interactions",
+          "Review layouts on different screens"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Mobile app project",
+        "topics": [
+          "Build a small React Native app",
+          "Polish core flows",
+          "Prepare and present a build"
+        ]
+      }
+    ],
+    "learn": [
+      "Use JavaScript basics",
+      "Build app screens",
+      "Navigate between screens",
+      "Work with app data",
+      "Test mobile layouts",
+      "Prepare a sample app"
+    ],
+    "prerequisites": "Basic programming concepts helpful."
+  },
+  {
+    "id": 21,
+    "slug": "game-development-unity",
+    "title": "Game Development (Unity)",
+    "category": "mobile",
+    "badge": null,
+    "duration": "8 Weeks",
+    "description": "Learn game development basics with Unity.",
+    "tools": [
+      "Unity",
+      "C#",
+      "Blender"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Game development foundations",
+        "topics": [
+          "Explore the Unity editor",
+          "Understand scenes and game objects",
+          "Set up a project"
+        ]
+      },
+      {
+        "week": 2,
+        "topic": "C# scripting basics",
+        "topics": [
+          "Use variables and conditions",
+          "Write methods and components",
+          "Respond to input"
+        ]
+      },
+      {
+        "week": 3,
+        "topic": "Scenes and gameplay",
+        "topics": [
+          "Create and arrange game objects",
+          "Use transforms and prefabs",
+          "Build player movement"
+        ]
+      },
+      {
+        "week": 4,
+        "topic": "Physics and interactions",
+        "topics": [
+          "Apply colliders and rigidbodies",
+          "Detect triggers and collisions",
+          "Create gameplay interactions"
+        ]
+      },
+      {
+        "week": 5,
+        "topic": "Visuals and animation",
+        "topics": [
+          "Import art assets",
+          "Configure materials and lighting",
+          "Create basic animations"
+        ]
+      },
+      {
+        "week": 6,
+        "topic": "Game UI and audio",
+        "topics": [
+          "Build menus and HUD elements",
+          "Add sound effects and music",
+          "Manage user feedback"
+        ]
+      },
+      {
+        "week": 7,
+        "topic": "Game systems and testing",
+        "topics": [
+          "Implement scoring and game states",
+          "Debug gameplay issues",
+          "Test and refine controls"
+        ]
+      },
+      {
+        "week": 8,
+        "topic": "Game project",
+        "topics": [
+          "Build a playable game level",
+          "Polish and test the experience",
+          "Export and present the project"
+        ]
+      }
+    ],
+    "learn": [
+      "Explore the Unity editor",
+      "Use basic C#",
+      "Create scenes",
+      "Add game objects",
+      "Build simple interactions",
+      "Test a small game"
+    ],
+    "prerequisites": "No prior experience required."
+  }
 ]

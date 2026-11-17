@@ -34,7 +34,7 @@ export default function CoursesPage({ searchParams }: { searchParams?: { categor
   const category = courseTabs.some(({ key }) => key === searchParams?.category) ? searchParams?.category : undefined;
   const visibleCourses = category && category !== "all" ? courses.filter((course) => course.category === category) : courses;
   return <><Navbar /><main>
-    <section className="courses-header container"><h1>Discover <span>Your Path</span> to a<br className="courses-title-break" /> <span>Tech Career.</span></h1><p>{courses.length} practical courses from 1 to 4 months. Pick a track and start learning.</p></section>
+    <section className="courses-header container"><h1>Discover <span>Your Path</span> to a<br className="courses-title-break" /> <span>Tech Career.</span></h1><p>{courses.length} practical 8-week courses. Pick a track and start learning.</p></section>
     <Suspense fallback={<CourseCatalogFallback visibleCourses={visibleCourses} activeCategory={(category as Course["category"] | undefined) ?? "all"} />}><CourseCatalog courses={courses} /></Suspense>
     <ContactSection />
   </main><Footer /><WhatsAppButton /></>;

@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/functions": "^3.11.3",
     "framer-motion": "^14.12.0",
     "lucide-react": "^1.72.0",
     "next": "14.2.5",
+    "pg": "^8.23.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.23.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",

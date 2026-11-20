@@ -30,8 +30,10 @@ function CourseCatalogFallback({ visibleCourses, activeCategory }: { visibleCour
   return <><div className="course-filter-bar" aria-label="Course categories"><div className="course-filter-scroll container">{courseTabs.map(({ key, label }) => <Link key={key} href={key === "all" ? "/courses" : `/courses?category=${key}`} className={key === activeCategory ? "course-filter active course-filter-static-active" : "course-filter"}><span className="course-filter-label">{label}</span><span className="course-filter-count">{key === "all" ? courses.length : courses.filter((course) => course.category === key).length}</span></Link>)}</div></div><div className="container courses-results"><div className="course-grid">{visibleCourses.map((course) => <CourseCard course={course} key={course.id} />)}</div></div></>;
 }
 
-export default function CoursesPage({ searchParams }: { searchParams?: { category?: string } }) {
-  const category = courseTabs.some(({ key }) => key === searchParams?.category) ? searchParams?.category : undefined;
+export default async function CoursesPage({ searchParams }: { searchParams: Promise<{ category?: string | string[] }> }) {
+  const query = await searchParams;
+  const requestedCategory = typeof query.category === "string" ? query.category : undefined;
+  const category = courseTabs.some(({ key }) => key === requestedCategory) ? requestedCategory : undefined;
   const visibleCourses = category && category !== "all" ? courses.filter((course) => course.category === category) : courses;
   return <><Navbar /><main>
     <section className="courses-header container"><h1>Discover <span>Your Path</span> to a<br className="courses-title-break" /> <span>Tech Career.</span></h1><p>{courses.length} practical 8-week courses. Pick a track and start learning.</p></section>

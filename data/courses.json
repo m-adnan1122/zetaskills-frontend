@@ -7,7 +7,7 @@
     "badge": "HOT",
     "duration": "8 Weeks",
     "description": "Use popular AI tools for everyday creative and work tasks.",
-    "image": "/images/courses/ai-tools-mastery.png",
+    "image": "/zeta-skills-course-banners/01-ai-tools-mastery.png",
     "tools": [
       "ChatGPT",
       "Claude",
@@ -192,7 +192,8 @@
       "Handle workflow data",
       "Test automations"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/02-ai-automation-workflows.png"
   },
   {
     "id": 3,
@@ -289,7 +290,8 @@
       "Check outputs",
       "Organize prompt sets"
     ],
-    "prerequisites": "No prior experience required."
+    "prerequisites": "No prior experience required.",
+    "image": "/zeta-skills-course-banners/03-prompt-engineering.png"
   },
   {
     "id": 4,
@@ -386,7 +388,8 @@
       "Improve audio",
       "Export projects"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/04-ai-video-editing.png"
   },
   {
     "id": 5,
@@ -483,7 +486,8 @@
       "Check page basics",
       "Measure results"
     ],
-    "prerequisites": "Basic web browsing skills."
+    "prerequisites": "Basic web browsing skills.",
+    "image": "/zeta-skills-course-banners/05-ai-powered-seo-geo.png"
   },
   {
     "id": 6,
@@ -580,7 +584,8 @@
       "Store application data",
       "Connect a web app"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/06-mern-stack-development.png"
   },
   {
     "id": 7,
@@ -677,7 +682,8 @@
       "Create forms",
       "Test application flows"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/07-php-laravel.png"
   },
   {
     "id": 8,
@@ -774,7 +780,8 @@
       "Manage site content",
       "Build a simple website"
     ],
-    "prerequisites": "No prior experience required."
+    "prerequisites": "No prior experience required.",
+    "image": "/zeta-skills-course-banners/08-wordpress-development.png"
   },
   {
     "id": 9,
@@ -871,7 +878,8 @@
       "Review store settings",
       "Prepare store pages"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/09-shopify-store-development.png"
   },
   {
     "id": 10,
@@ -968,7 +976,8 @@
       "Prepare social posts",
       "Export design files"
     ],
-    "prerequisites": "No prior experience required."
+    "prerequisites": "No prior experience required.",
+    "image": "/zeta-skills-course-banners/10-graphic-designing.png"
   },
   {
     "id": 11,
@@ -1065,7 +1074,8 @@
       "Build prototypes",
       "Review designs"
     ],
-    "prerequisites": "No prior experience required."
+    "prerequisites": "No prior experience required.",
+    "image": "/zeta-skills-course-banners/11-ui-ux-design.png"
   },
   {
     "id": 12,
@@ -1162,7 +1172,8 @@
       "Plan product pages",
       "Understand order flows"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/12-amazon-fba-dropshipping.png"
   },
   {
     "id": 13,
@@ -1259,7 +1270,8 @@
       "Review order steps",
       "Manage store content"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/13-ebay-selling-store-setup.png"
   },
   {
     "id": 14,
@@ -1356,7 +1368,8 @@
       "Organize a shop",
       "Review shop pages"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/14-etsy-handmade-marketplace.png"
   },
   {
     "id": 15,
@@ -1453,7 +1466,8 @@
       "Write proposals",
       "Communicate with clients"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/15-upwork-fiverr-freelancing.png"
   },
   {
     "id": 16,
@@ -1550,7 +1564,8 @@
       "Prepare store visuals",
       "Read listing metrics"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/16-aso-app-store-optimization.png"
   },
   {
     "id": 17,
@@ -1647,7 +1662,8 @@
       "Use AI for ideas",
       "Review engagement data"
     ],
-    "prerequisites": "No prior experience required."
+    "prerequisites": "No prior experience required.",
+    "image": "/zeta-skills-course-banners/17-social-media-marketing-ai.png"
   },
   {
     "id": 18,
@@ -1744,7 +1760,8 @@
       "Use analytics tools",
       "Measure campaign activity"
     ],
-    "prerequisites": "Basic computer skills."
+    "prerequisites": "Basic computer skills.",
+    "image": "/zeta-skills-course-banners/18-digital-marketing-complete.png"
   },
   {
     "id": 19,
@@ -1841,7 +1858,8 @@
       "Test on devices",
       "Prepare an app project"
     ],
-    "prerequisites": "Basic programming concepts helpful."
+    "prerequisites": "Basic programming concepts helpful.",
+    "image": "/zeta-skills-course-banners/19-flutter-mobile-development.png"
   },
   {
     "id": 20,
@@ -1938,7 +1956,8 @@
       "Test mobile layouts",
       "Prepare a sample app"
     ],
-    "prerequisites": "Basic programming concepts helpful."
+    "prerequisites": "Basic programming concepts helpful.",
+    "image": "/zeta-skills-course-banners/20-react-native.png"
   },
   {
     "id": 21,
@@ -2035,6 +2054,7 @@
       "Build simple interactions",
       "Test a small game"
     ],
-    "prerequisites": "No prior experience required."
+    "prerequisites": "No prior experience required.",
+    "image": "/zeta-skills-course-banners/21-game-development-unity.png"
   }
 ]

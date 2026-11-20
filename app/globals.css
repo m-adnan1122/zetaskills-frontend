@@ -477,3 +477,6 @@ body{font-size:16px;line-height:1.65}.container{width:min(1220px,calc(100% - 64p
 
 .internship-page-aside .detail-whatsapp:hover{background:#d8f7e4;border-color:#70d69a;color:#116b37}
 .dark .internship-page-aside .detail-whatsapp:hover{background:#195337;border-color:#4ade80;color:#dcfce7}
+
+/* Form helper text needs its own color inside the blue contact section. */
+.contact-grid > div .contact-form > p,.dark .contact-grid > div .contact-form > p{color:var(--muted)}

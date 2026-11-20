@@ -14,9 +14,10 @@ export function generateMetadata(): Metadata {
 
 type EnrollSearchParams = Record<string, string | string[] | undefined>;
 
-export default function EnrollPage({ searchParams }: { searchParams?: EnrollSearchParams }) {
-  const courseQuery = searchParams?.course;
-  const refQuery = searchParams?.ref;
+export default async function EnrollPage({ searchParams }: { searchParams: Promise<EnrollSearchParams> }) {
+  const query = await searchParams;
+  const courseQuery = query.course;
+  const refQuery = query.ref;
   const requestedCourse = typeof courseQuery === "string" ? courseQuery : "";
   const initialCourse = courses.some((course) => course.slug === requestedCourse) ? requestedCourse : "";
   const referredBy = typeof refQuery === "string" ? refQuery.slice(0, 200) : "";

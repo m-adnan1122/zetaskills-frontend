@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
+import { SitePhoto } from "@/components/SitePhoto";
 import { StatsStrip } from "@/components/StatsStrip";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { InternshipSection } from "@/components/InternshipSection";
@@ -28,11 +28,11 @@ export default function AboutPage() {
         <p>At ZetaSkills, we believe learning technology should go beyond watching lessons and memorizing concepts. We help students develop practical digital skills, work on real-world projects, and prepare for opportunities in the modern digital industry.</p>
       </FadeUp>
     </section>
-    <div className="container about-photo-wrap"><FadeUp><PhotoPlaceholder caption="Institute photo" className="about-photo" /></FadeUp></div>
+    <div className="container about-photo-wrap"><FadeUp><SitePhoto src="/Website_Images_Pack/Website_Images/collaborative_tech_training_lab.png" alt="Illustration of a collaborative technology training classroom" className="about-photo" sizes="(max-width: 700px) 100vw, 1280px" /></FadeUp></div>
     <StatsStrip />
     <section className="section container about-learning">
       <FadeUp className="about-learning-copy"><h2>A Learning Environment Built Around Practical Skills</h2><p>ZetaSkills is an IT and freelancing training institute based in Faisalabad, Pakistan, created to make relevant digital education more accessible to aspiring professionals.</p><p>We bring together structured learning, hands-on practice, and industry-oriented training across fields such as Artificial Intelligence, Web Development, Graphic Design, Digital Marketing, E-Commerce, and Mobile App Development.</p></FadeUp>
-      <FadeUp delay={0.2}><PhotoPlaceholder caption="Classroom photo" className="about-classroom-photo" /></FadeUp>
+      <FadeUp delay={0.2}><SitePhoto src="/Website_Images_Pack/Website_Images/collaborative_tech_workspace_in_a_modern_office.png" alt="Illustration of an instructor guiding students at a laptop" className="about-classroom-photo" sizes="(max-width: 700px) 100vw, 50vw" /></FadeUp>
     </section>
     <section className="difference-section">
       <div className="container difference-inner">

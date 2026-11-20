@@ -12,9 +12,11 @@ import type { Course } from "@/data/course-types";
 const courses = coursesData as Course[];
 const categories: Record<Course["category"], string> = { ai: "AI & Automation", web: "Web Development", design: "Design", ecommerce: "E-Commerce", marketing: "Digital Marketing", mobile: "Mobile Development" };
 export function generateStaticParams() { return courses.map(({ slug }) => ({ slug })); }
-export function generateMetadata({ params }: { params: { slug: string } }) { const course = courses.find(c => c.slug === params.slug); return { title: course ? `${course.title} | ZetaSkills` : "Course | ZetaSkills", description: course?.description }; }
-export default function CourseDetail({ params }: { params: { slug: string } }) {
-  const course = courses.find(c => c.slug === params.slug);
+type CoursePageProps = { params: Promise<{ slug: string }> };
+export async function generateMetadata({ params }: CoursePageProps) { const { slug } = await params; const course = courses.find(c => c.slug === slug); return { title: course ? `${course.title} | ZetaSkills` : "Course | ZetaSkills", description: course?.description }; }
+export default async function CourseDetail({ params }: CoursePageProps) {
+  const { slug } = await params;
+  const course = courses.find(c => c.slug === slug);
   if (!course) notFound();
   const number = WHATSAPP_NUMBER;
   const faqs = [

@@ -15,7 +15,7 @@ export function Stagger({ children, className, delay = 0, duration = 0.4, once =
 function AnimatedStagger({ children, className, delay, duration, once }: StaggerProps) {
   const reduced = useReducedMotion() ?? false;
   if (reduced) return <div className={className}>{children}</div>;
-  const parentVariants: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: delay, duration, ease: "easeOut" as const } } };
+  const parentVariants: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.05, delayChildren: delay, duration, ease: "easeOut" as const } } };
   return <motion.div className={className} variants={parentVariants} initial="hidden" whileInView="visible" viewport={{ once, amount: 0.2 }}>{children}</motion.div>;
 }
 
